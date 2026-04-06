@@ -9,7 +9,7 @@ const PainPointsSection = () => {
         {/* badge */}
         <Badge text="Are Distractions Holding You Back?" />
         {/* heading */}
-        <p className="tracking-tight text-[#E0E3E5] max-w-250 mx-auto text-[52px] text-left leading-[120%] font-medium mb-6">
+        <p className="tracking-tight text-[#E0E3E5] max-w-5xl md:max-w-6xl lg:max-w-250 mx-auto text-2xl md:text-3xl lg:text-[52px] text-center 2xl:text-left leading-[120%] font-medium mb-6">
           If you struggle to focus, feel overwhelmed by endl
           <p className="inline text-[#484A4C]">
             ess tasks, or procrastinate instead of making progress, you’re not
@@ -39,19 +39,20 @@ const PainPointsSection = () => {
         </div>
       </div>
       {/* Wrapper section */}
-      <div className="flex items-center gap-4">
+      <div className="flex gap-4">
         <Image
           src="/images/pain-points-section/image4.png"
           alt="Pain Points"
           width={526}
           height={642}
+          className="hidden xl:block"
         />
         {/*  */}
         <div className="flex flex-col p-10 justify-between rounded-3xl w-full gap-[117px] bg-[#111214]">
           {/* header */}
-          <div className="flex justify-between w-full">
+          <div className="flex flex-col items-start md:flex-row justify-between w-full">
             <Badge text="No Worries" />
-            <div className="flex flex-col items-end">
+            <div className="flex flex-col items-start md:items-end">
               <Image
                 src="/images/pain-points-section/Avatar-Grp.png"
                 alt="Pain Points"
@@ -62,7 +63,7 @@ const PainPointsSection = () => {
             </div>
           </div>
           {/* content */}
-          <div className="flex items-center justify-between gap-10">
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-10">
             {/* text */}
             <div className="flex flex-col gap-8.5">
               <p className="text-[#AAAEB2] text-[17px] max-w-50 leading-[135%] tracking-normal font-[400px]">
@@ -73,7 +74,7 @@ const PainPointsSection = () => {
                 And fortunately it’s a skill you can train & develop.
               </p>
             </div>
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-row md:flex-col gap-2">
               <Image
                 src="/images/pain-points-section/Image5.png"
                 alt="Pain Points"

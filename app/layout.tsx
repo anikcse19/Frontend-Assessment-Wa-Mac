@@ -1,21 +1,10 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
-const centuryGothic = localFont({
-  src: [
-    {
-      path: "../fonts/centurygothic.ttf",
-      weight: "400",
-      style: "normal",
-    },
-    {
-      path: "../fonts/centurygothic_bold.ttf",
-      weight: "700",
-      style: "normal",
-    },
-  ],
-  variable: "--font-century-gothic",
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
   display: "swap",
 });
 
@@ -31,8 +20,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${centuryGothic.variable} h-full antialiased`}>
-      <body className={`${centuryGothic.className} min-h-full flex flex-col`}>
+    <html lang="en" className={`${inter.variable} h-full antialiased`}>
+      <body className={`${inter.className} min-h-full flex flex-col`}>
         {children}
       </body>
     </html>
