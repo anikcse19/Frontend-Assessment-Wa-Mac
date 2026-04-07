@@ -9,9 +9,9 @@ const PainPointsSection = () => {
         {/* badge */}
         <Badge text="Are Distractions Holding You Back?" />
         {/* heading */}
-        <p className="tracking-tight text-[#E0E3E5] max-w-5xl md:max-w-6xl lg:max-w-250 mx-auto text-2xl md:text-3xl lg:text-[52px] text-center 2xl:text-left leading-[120%] font-medium mb-6">
+        <p className="tracking-tight text-gray-800 dark:text-[#E0E3E5] max-w-5xl md:max-w-6xl lg:max-w-250 mx-auto text-2xl md:text-3xl lg:text-[52px] text-center 2xl:text-left leading-[120%] font-medium mb-6">
           If you struggle to focus, feel overwhelmed by endl
-          <p className="inline text-[#484A4C]">
+          <p className="inline text-gray-400 dark:text-[#484A4C]">
             ess tasks, or procrastinate instead of making progress, you’re not
             alone.
           </p>
@@ -48,7 +48,7 @@ const PainPointsSection = () => {
           className="hidden xl:block"
         />
         {/*  */}
-        <div className="flex flex-col p-10 justify-between rounded-3xl w-full gap-[117px] bg-[#111214]">
+        <div className="flex flex-col p-10 justify-between rounded-3xl w-full gap-[117px] bg-white dark:bg-[#111214]">
           {/* header */}
           <div className="flex flex-col items-start md:flex-row justify-between w-full">
             <Badge text="No Worries" />
@@ -59,18 +59,20 @@ const PainPointsSection = () => {
                 width={104}
                 height={24}
               />
-              <p className="text-white">Join with 5K other students</p>
+              <p className="text-gray-900 dark:text-white">
+                Join with 5K other students
+              </p>
             </div>
           </div>
           {/* content */}
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-10">
             {/* text */}
             <div className="flex flex-col gap-8.5">
-              <p className="text-[#AAAEB2] text-[17px] max-w-50 leading-[135%] tracking-normal font-[400px]">
+              <p className="text-gray-500 dark:text-[#AAAEB2] text-[17px] max-w-50 leading-[135%] tracking-normal font-[400px]">
                 The ability to concentrate deeply is the ultimate productivity
                 hack
               </p>
-              <p className="text-[#D0D5D9] text-[28px] max-w-60 leading-[115%] tracking-normal font-[500px]">
+              <p className="text-gray-700 dark:text-[#D0D5D9] text-[28px] max-w-60 leading-[115%] tracking-normal font-[500px]">
                 And fortunately it’s a skill you can train & develop.
               </p>
             </div>

@@ -9,21 +9,23 @@ const CTA = () => {
   return (
     <div
       id="enroll"
-      className="flex flex-col lg:flex-row gap-4 md:gap-6 py-16 md:py-20 lg:py-30 text-[#E0E3E5]"
+      className="flex flex-col lg:flex-row gap-4 md:gap-6 py-16 md:py-20 lg:py-30 text-gray-800 dark:text-[#E0E3E5]"
     >
       {/* left side */}
-      <div className="flex flex-col py-6 md:py-8 lg:py-10 px-6 md:px-8 lg:px-15 gap-8 md:gap-12 lg:gap-15 rounded-3xl bg-[#111214] w-full lg:w-[60%]">
+      <div className="flex flex-col py-6 md:py-8 lg:py-10 px-6 md:px-8 lg:px-15 gap-8 md:gap-12 lg:gap-15 rounded-3xl bg-white dark:bg-[#111214] w-full lg:w-[60%]">
         <div className="flex flex-col items-start gap-4 md:gap-5">
           <Badge text="Introducing" />
           <h2 className="text-2xl md:text-3xl lg:text-[40px] tracking-tighter leading-[115%]">
             The Deep Work Blueprint
           </h2>
-          <p className="text-sm md:text-base">What extra you will get if you enroll now</p>
+          <p className="text-sm md:text-base">
+            What extra you will get if you enroll now
+          </p>
         </div>
         <div className="flex flex-col gap-4 md:gap-6">
           <div className="flex items-center gap-3">
             <div
-              className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 rounded-full bg-[#171B21] flex items-center justify-center relative shrink-0"
+              className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 rounded-full bg-white dark:bg-[#171B21] flex items-center justify-center relative shrink-0"
               style={{
                 boxShadow: "0px 8px 40px 0px #2466F226",
               }}
@@ -41,15 +43,15 @@ const CTA = () => {
                   maskComposite: "exclude",
                 }}
               ></div>
-              <TbHexagonPlusFilled className="text-white w-5 h-5 md:w-[23px] md:h-[23px]" />
+              <TbHexagonPlusFilled className="text-[#2466F2] dark:text-white w-5 h-5 md:w-[23px] md:h-[23px]" />
             </div>
-            <p className="text-[#AAAEB2] text-sm md:text-[15px]">
+            <p className="text-gray-500 dark:text-[#AAAEB2] text-sm md:text-[15px]">
               Bonus: 1:1 coaching session to boost focus.
             </p>
           </div>
           <div className="flex items-center gap-3">
             <div
-              className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 rounded-full bg-[#171B21] flex items-center justify-center relative shrink-0"
+              className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 rounded-full bg-white dark:bg-[#171B21] flex items-center justify-center relative shrink-0"
               style={{
                 boxShadow: "0px 8px 40px 0px #2466F226",
               }}
@@ -67,9 +69,9 @@ const CTA = () => {
                   maskComposite: "exclude",
                 }}
               ></div>
-              <TbHexagonPlusFilled className="text-white w-5 h-5 md:w-[23px] md:h-[23px]" />
+              <TbHexagonPlusFilled className="text-[#2466F2] dark:text-white w-5 h-5 md:w-[23px] md:h-[23px]" />
             </div>
-            <p className="text-[#AAAEB2] text-sm md:text-[15px]">
+            <p className="text-gray-500 dark:text-[#AAAEB2] text-sm md:text-[15px]">
               Discount: Save 30% when you enroll now!
             </p>
           </div>
@@ -78,7 +80,7 @@ const CTA = () => {
 
       {/* right side */}
       <div
-        className="flex flex-col justify-start w-full lg:w-[40%] rounded-3xl bg-[#111214] px-5 md:px-6 lg:px-8 pt-6 md:pt-8 lg:pt-10 pb-6 md:pb-8 gap-8 md:gap-12 lg:gap-16 relative"
+        className="flex flex-col justify-start w-full lg:w-[40%] rounded-3xl bg-white dark:bg-[#111214] px-5 md:px-6 lg:px-8 pt-6 md:pt-8 lg:pt-10 pb-6 md:pb-8 gap-8 md:gap-12 lg:gap-16 relative"
         style={{
           boxShadow: "0px 8px 40px 0px #2466F226",
         }}
@@ -105,7 +107,9 @@ const CTA = () => {
               <p className="text-3xl md:text-4xl lg:text-[52px]">$349</p>
               {/* original price */}
               <span className="relative">
-                <p className="text-lg md:text-xl lg:text-[26px] text-[#AAAEB2]">$500</p>
+                <p className="text-lg md:text-xl lg:text-[26px] text-gray-400 dark:text-[#AAAEB2]">
+                  $500
+                </p>
                 <span className="absolute top-1/2 left-0 w-full h-0.5 bg-[#FF1818] -translate-y-1/2 rotate-12"></span>
               </span>
             </div>
@@ -114,14 +118,16 @@ const CTA = () => {
               <p className="text-sm md:text-base">30% Off</p>
             </span>
           </div>
-          <p className="text-sm md:text-[15px]">30% off until 4d : 2h : 41m : 17s</p>
+          <p className="text-sm md:text-[15px]">
+            30% off until 4d : 2h : 41m : 17s
+          </p>
         </div>
 
         {/* Features */}
         <div className="flex flex-col justify-baseline gap-4 md:gap-6 relative z-10">
           <div className="flex items-center gap-3 md:gap-5">
             <div
-              className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 rounded-full bg-[#171B21] flex items-center justify-center relative shrink-0"
+              className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 rounded-full bg-white dark:bg-[#171B21] flex items-center justify-center relative shrink-0"
               style={{
                 boxShadow: "0px 8px 40px 0px #2466F226",
               }}
@@ -139,15 +145,15 @@ const CTA = () => {
                   maskComposite: "exclude",
                 }}
               ></div>
-              <TbRosetteDiscountCheckFilled className="text-white w-3 h-3 md:w-3.5 md:h-3.5 lg:w-4 lg:h-4" />
+              <TbRosetteDiscountCheckFilled className="text-[#2466F2] dark:text-white w-3 h-3 md:w-3.5 md:h-3.5 lg:w-4 lg:h-4" />
             </div>
-            <span className="text-[#D0D5D9] text-xs md:text-sm lg:text-[15px] leading-[135%] font-normal">
+            <span className="text-gray-700 dark:text-[#D0D5D9] text-xs md:text-sm lg:text-[15px] leading-[135%] font-normal">
               6h of videos - Step-by-step deep work strategies.
             </span>
           </div>
           <div className="flex items-center gap-3 md:gap-5">
             <div
-              className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 rounded-full bg-[#171B21] flex items-center justify-center relative shrink-0"
+              className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 rounded-full bg-white dark:bg-[#171B21] flex items-center justify-center relative shrink-0"
               style={{
                 boxShadow: "0px 8px 40px 0px #2466F226",
               }}
@@ -165,15 +171,15 @@ const CTA = () => {
                   maskComposite: "exclude",
                 }}
               ></div>
-              <TbRosetteDiscountCheckFilled className="text-white w-3 h-3 md:w-3.5 md:h-3.5 lg:w-4 lg:h-4" />
+              <TbRosetteDiscountCheckFilled className="text-[#2466F2] dark:text-white w-3 h-3 md:w-3.5 md:h-3.5 lg:w-4 lg:h-4" />
             </div>
-            <span className="text-[#D0D5D9] text-xs md:text-sm lg:text-[15px] leading-[135%] font-normal">
+            <span className="text-gray-700 dark:text-[#D0D5D9] text-xs md:text-sm lg:text-[15px] leading-[135%] font-normal">
               Templates & Trackers – Stay on track effortlessly.
             </span>
           </div>
           <div className="flex items-center gap-3 md:gap-5">
             <div
-              className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 rounded-full bg-[#171B21] flex items-center justify-center relative shrink-0"
+              className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 rounded-full bg-white dark:bg-[#171B21] flex items-center justify-center relative shrink-0"
               style={{
                 boxShadow: "0px 8px 40px 0px #2466F226",
               }}
@@ -191,15 +197,15 @@ const CTA = () => {
                   maskComposite: "exclude",
                 }}
               ></div>
-              <TbRosetteDiscountCheckFilled className="text-white w-3 h-3 md:w-3.5 md:h-3.5 lg:w-4 lg:h-4" />
+              <TbRosetteDiscountCheckFilled className="text-[#2466F2] dark:text-white w-3 h-3 md:w-3.5 md:h-3.5 lg:w-4 lg:h-4" />
             </div>
-            <span className="text-[#D0D5D9] text-xs md:text-sm lg:text-[15px] leading-[135%] font-normal">
+            <span className="text-gray-700 dark:text-[#D0D5D9] text-xs md:text-sm lg:text-[15px] leading-[135%] font-normal">
               Live Q&As – Expert guidance & accountability.
             </span>
           </div>
           <div className="flex items-center gap-3 md:gap-5">
             <div
-              className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 rounded-full bg-[#171B21] flex items-center justify-center relative shrink-0"
+              className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 rounded-full bg-white dark:bg-[#171B21] flex items-center justify-center relative shrink-0"
               style={{
                 boxShadow: "0px 8px 40px 0px #2466F226",
               }}
@@ -217,9 +223,9 @@ const CTA = () => {
                   maskComposite: "exclude",
                 }}
               ></div>
-              <TbRosetteDiscountCheckFilled className="text-white w-3 h-3 md:w-3.5 md:h-3.5 lg:w-4 lg:h-4" />
+              <TbRosetteDiscountCheckFilled className="text-[#2466F2] dark:text-white w-3 h-3 md:w-3.5 md:h-3.5 lg:w-4 lg:h-4" />
             </div>
-            <span className="text-[#D0D5D9] text-xs md:text-sm lg:text-[15px] leading-[135%] font-normal">
+            <span className="text-gray-700 dark:text-[#D0D5D9] text-xs md:text-sm lg:text-[15px] leading-[135%] font-normal">
               Exclusive Community – Connect with others.
             </span>
           </div>
@@ -227,7 +233,9 @@ const CTA = () => {
 
         {/* button */}
         <div className="bg-[#2466F2] hover:bg-[#5282e9] cursor-pointer transition-colors duration-300 py-2 md:py-3 px-4 md:px-5 rounded-xl flex items-center justify-center">
-          <p className="font-medium leading-[135%] text-sm md:text-base lg:text-[17px]">Enroll Now</p>
+          <p className="font-medium leading-[135%] text-sm md:text-base lg:text-[17px]">
+            Enroll Now
+          </p>
         </div>
       </div>
     </div>

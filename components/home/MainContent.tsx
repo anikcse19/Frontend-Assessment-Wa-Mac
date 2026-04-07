@@ -7,7 +7,7 @@ import Curriculum from "./curriculum";
 
 const MainContent = () => {
   return (
-    <div className="bg-[#08090A]">
+    <div className="bg-[#F8FAFC] dark:bg-[#08090A]">
       <div className="container mx-auto">
         <PainPointsSection />
         <Benefits />

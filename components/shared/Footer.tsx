@@ -3,14 +3,14 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="bg-[#111214] p-6 md:p-8 lg:p-10 text-white">
+    <div className="bg-gray-100 dark:bg-[#111214] p-6 md:p-8 lg:p-10 text-gray-900 dark:text-white">
       <div className="container mx-auto flex flex-col">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12 py-10 md:py-16 lg:py-20 text-center md:text-left">
           <div className="flex flex-col gap-4 md:gap-5">
-            <h2 className="text-2xl md:text-3xl lg:text-[40px] text-[#E0E3E5] leading-[115%] font-medium tracking-tighter md:w-[260px]">
+            <h2 className="text-2xl md:text-3xl lg:text-[40px] text-gray-800 dark:text-[#E0E3E5] leading-[115%] font-medium tracking-tighter md:w-[260px]">
               The Deep Work Blueprint
             </h2>
-            <p className="text-[#AAAEB2] text-sm md:text-[17px] leading-[135%]">
+            <p className="text-gray-500 dark:text-[#AAAEB2] text-sm md:text-[17px] leading-[135%]">
               Master Focus & Get More Done in Less Time
             </p>
           </div>
@@ -31,7 +31,7 @@ const Footer = () => {
           }}
           className="flex flex-col md:flex-row items-center justify-between gap-4 md:gap-8 pt-6 md:pt-8 pb-8 md:pb-15"
         >
-          <p className="text-[#D0D5D9] text-sm md:text-[15px] text-center md:text-left">
+          <p className="text-gray-600 dark:text-[#D0D5D9] text-sm md:text-[15px] text-center md:text-left">
             © Copyright 2024, All Rights Reserved
           </p>
           <div className="flex flex-wrap items-center justify-center md:justify-end gap-4 md:gap-6 lg:gap-8 text-sm md:text-[15px]">

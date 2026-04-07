@@ -11,7 +11,7 @@ const Benefits = () => {
       {/* section title */}
       <div className="flex flex-col gap-6 md:gap-8 py-16 md:py-24 lg:py-40 px-4 md:px-10">
         <Badge text="The Deep Work Blueprint" />
-        <p className="text-2xl md:text-3xl lg:text-[40px] text-[#E0E3E5] max-w-2xl md:max-w-4xl lg:max-w-150 mx-auto text-center lg:text-left">
+        <p className="text-2xl md:text-3xl lg:text-[40px] text-gray-800 dark:text-[#E0E3E5] max-w-2xl md:max-w-4xl lg:max-w-150 mx-auto text-center lg:text-left">
           A self-paced, results-driven course designed to help you
         </p>
       </div>
@@ -33,7 +33,7 @@ const Benefits = () => {
             </div>
             <div className="flex flex-row md:flex-col gap-3 md:gap-5 p-4 md:p-5 flex-1 md:w-75">
               <div
-                className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 rounded-full bg-[#171B21] flex items-center justify-center relative shrink-0"
+                className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 rounded-full bg-white dark:bg-[#171B21] flex items-center justify-center relative shrink-0"
                 style={{
                   boxShadow: "0px 8px 40px 0px #2466F226",
                 }}
@@ -51,9 +51,9 @@ const Benefits = () => {
                     maskComposite: "exclude",
                   }}
                 ></div>
-                <HiOutlineLightBulb className="text-white w-5 h-5 md:w-[23px] md:h-[23px]" />
+                <HiOutlineLightBulb className="text-[#2466F2] dark:text-white w-5 h-5 md:w-[23px] md:h-[23px]" />
               </div>
-              <p className="text-[#D0D5D9] text-lg md:text-xl lg:text-[24px] leading-[135%] font-normal">
+              <p className="text-gray-700 dark:text-[#D0D5D9] text-lg md:text-xl lg:text-[24px] leading-[135%] font-normal">
                 Develop laser-sharp focus & eliminate distractions.
               </p>
             </div>
@@ -73,7 +73,7 @@ const Benefits = () => {
             </div>
             <div className="flex flex-row md:flex-col gap-3 md:gap-5 p-4 md:p-5 flex-1">
               <div
-                className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 rounded-full bg-[#171B21] flex items-center justify-center relative shrink-0"
+                className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 rounded-full bg-white dark:bg-[#171B21] flex items-center justify-center relative shrink-0"
                 style={{
                   boxShadow: "0px 8px 40px 0px #2466F226",
                 }}
@@ -91,9 +91,9 @@ const Benefits = () => {
                     maskComposite: "exclude",
                   }}
                 ></div>
-                <LuBrain className="text-white w-5 h-5 md:w-[23px] md:h-[23px]" />
+                <LuBrain className="text-[#2466F2] dark:text-white w-5 h-5 md:w-[23px] md:h-[23px]" />
               </div>
-              <span className="text-[#D0D5D9] text-lg md:text-xl lg:text-[22px] leading-[135%] font-normal">
+              <span className="text-gray-700 dark:text-[#D0D5D9] text-lg md:text-xl lg:text-[22px] leading-[135%] font-normal">
                 Master deep work techniques for smarter productivity.
               </span>
             </div>
@@ -113,7 +113,7 @@ const Benefits = () => {
             </div>
             <div className="flex flex-row md:flex-col gap-3 md:gap-5 p-4 md:p-5 flex-1">
               <div
-                className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 rounded-full bg-[#171B21] flex items-center justify-center relative shrink-0"
+                className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 rounded-full bg-white dark:bg-[#171B21] flex items-center justify-center relative shrink-0"
                 style={{
                   boxShadow: "0px 8px 40px 0px #2466F226",
                 }}
@@ -131,9 +131,9 @@ const Benefits = () => {
                     maskComposite: "exclude",
                   }}
                 ></div>
-                <TbRosetteDiscountCheckFilled className="text-white w-5 h-5 md:w-[23px] md:h-[23px]" />
+                <TbRosetteDiscountCheckFilled className="text-[#2466F2] dark:text-white w-5 h-5 md:w-[23px] md:h-[23px]" />
               </div>
-              <span className="text-[#D0D5D9] text-lg md:text-xl lg:text-[22px] leading-[135%] font-normal">
+              <span className="text-gray-700 dark:text-[#D0D5D9] text-lg md:text-xl lg:text-[22px] leading-[135%] font-normal">
                 Overcome procrastination & get more done.
               </span>
             </div>
@@ -153,7 +153,7 @@ const Benefits = () => {
             </div>
             <div className="flex flex-row md:flex-col gap-3 md:gap-5 p-4 md:p-5 flex-1">
               <div
-                className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 rounded-full bg-[#171B21] flex items-center justify-center relative shrink-0"
+                className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 rounded-full bg-white dark:bg-[#171B21] flex items-center justify-center relative shrink-0"
                 style={{
                   boxShadow: "0px 8px 40px 0px #2466F226",
                 }}
@@ -171,9 +171,9 @@ const Benefits = () => {
                     maskComposite: "exclude",
                   }}
                 ></div>
-                <LuRoute className="text-white w-5 h-5 md:w-[23px] md:h-[23px]" />
+                <LuRoute className="text-[#2466F2] dark:text-white w-5 h-5 md:w-[23px] md:h-[23px]" />
               </div>
-              <span className="text-[#D0D5D9] text-lg md:text-xl lg:text-[22px] leading-[135%] font-normal">
+              <span className="text-gray-700 dark:text-[#D0D5D9] text-lg md:text-xl lg:text-[22px] leading-[135%] font-normal">
                 Build lasting habits for long-term success.
               </span>
             </div>

@@ -5,7 +5,7 @@ import Navbar from "@/components/shared/Navbar";
 
 const page = () => {
   return (
-    <div>
+    <div className="bg-[#F8FAFC] dark:bg-[#000000]">
       <Navbar />
       <HeroSection />
       <MainContent />

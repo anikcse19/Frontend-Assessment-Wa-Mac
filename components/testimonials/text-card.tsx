@@ -22,7 +22,7 @@ const TextCard = ({ avatar, text, name, role }: TextCardProps) => (
         maskComposite: "exclude",
       }}
     ></div>
-    <div className="relative z-10 w-full h-full bg-[#0E1014] rounded-4xl p-4 sm:p-6 md:p-8 flex flex-col justify-between">
+    <div className="relative z-10 w-full h-full bg-white dark:bg-[#0E1014] rounded-4xl p-4 sm:p-6 md:p-8 flex flex-col justify-between">
       <div>
         <Image
           src={avatar}
@@ -31,11 +31,17 @@ const TextCard = ({ avatar, text, name, role }: TextCardProps) => (
           className="w-8 h-8 sm:w-10 sm:h-10 rounded-full object-cover mb-4 md:mb-8"
           alt={name}
         />
-        <p className="text-[#A1A1A1] leading-relaxed text-sm md:text-[17px]">{text}</p>
+        <p className="text-gray-600 dark:text-[#A1A1A1] leading-relaxed text-sm md:text-[17px]">
+          {text}
+        </p>
       </div>
       <div>
-        <h4 className="text-base sm:text-lg md:text-xl font-semibold">{name}</h4>
-        <p className="text-[#6B6D71] text-xs sm:text-sm mt-1">{role}</p>
+        <h4 className="text-base sm:text-lg md:text-xl font-semibold text-gray-900 dark:text-white">
+          {name}
+        </h4>
+        <p className="text-gray-500 dark:text-[#6B6D71] text-xs sm:text-sm mt-1">
+          {role}
+        </p>
       </div>
     </div>
   </div>

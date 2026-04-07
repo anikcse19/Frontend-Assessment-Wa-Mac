@@ -151,7 +151,7 @@ const Curriculum = () => {
       {/* header */}
       <div className="flex flex-col gap-6 md:gap-8 py-16 md:py-24 lg:py-40 px-4 md:px-10">
         <Badge text="Course Curriculum" />
-        <h2 className="text-[#E0E3E5] text-2xl md:text-3xl lg:text-[40px] max-w-2xl md:max-w-4xl lg:max-w-160 mx-auto text-center leading-[115%] tracking-tighter">
+        <h2 className="text-gray-800 dark:text-[#E0E3E5] text-2xl md:text-3xl lg:text-[40px] max-w-2xl md:max-w-4xl lg:max-w-160 mx-auto text-center leading-[115%] tracking-tighter">
           Mastering Deep Work: A Structured Path to Peak Productivity
         </h2>
       </div>
@@ -173,15 +173,15 @@ const Curriculum = () => {
                 }}
               >
                 <div className="flex flex-col gap-1 md:gap-2">
-                  <p className="text-[#D0D5D9] text-base md:text-lg lg:text-[20px] leading-[135%] font-medium">
+                  <p className="text-gray-700 dark:text-[#D0D5D9] text-base md:text-lg lg:text-[20px] leading-[135%] font-medium">
                     {module.title}
                   </p>
-                  <p className="text-[#AAAEB2] text-sm md:text-[15px] leading-[135%]">
+                  <p className="text-gray-500 dark:text-[#AAAEB2] text-sm md:text-[15px] leading-[135%]">
                     {module.duration}
                   </p>
                 </div>
                 <FaCaretUp
-                  className={`text-white w-6 h-6 md:w-8 md:h-8 shrink-0 transition-transform duration-300 ${
+                  className={`text-gray-900 dark:text-white w-6 h-6 md:w-8 md:h-8 shrink-0 transition-transform duration-300 ${
                     expandedModules.has(module.id) ? "rotate-180" : ""
                   }`}
                 />
@@ -216,18 +216,18 @@ const Curriculum = () => {
                       height={32}
                       className="w-6 h-6 md:w-8 md:h-8 shrink-0"
                     />
-                    <p className="text-[#AAAEB2] text-sm md:text-base lg:text-[17px] leading-[135%] flex-1">
+                    <p className="text-gray-500 dark:text-[#AAAEB2] text-sm md:text-base lg:text-[17px] leading-[135%] flex-1">
                       {lesson.title}
                     </p>
                     <div className="flex items-center gap-3 md:gap-4 lg:gap-6 shrink-0">
                       {lesson.hasPreview && (
-                        <div className="bg-[#171B21] py-1 px-2 md:px-3 lg:px-4 flex items-center justify-center rounded-lg">
+                        <div className="bg-blue-50 dark:bg-[#171B21] py-1 px-2 md:px-3 lg:px-4 flex items-center justify-center rounded-lg">
                           <p className="text-[#669EFF] text-xs md:text-sm lg:text-[15px] leading-[135%] whitespace-nowrap">
                             Preview
                           </p>
                         </div>
                       )}
-                      <p className="text-[#AAAEB2] text-sm md:text-base lg:text-[17px] leading-[135%] whitespace-nowrap">
+                      <p className="text-gray-500 dark:text-[#AAAEB2] text-sm md:text-base lg:text-[17px] leading-[135%] whitespace-nowrap">
                         {lesson.duration}
                       </p>
                     </div>
@@ -241,7 +241,7 @@ const Curriculum = () => {
         <div className="pt-10 md:pt-16 lg:pt-25 w-full lg:w-auto">
           <div className="lg:sticky lg:top-24">
             <div
-              className="flex flex-col justify-start rounded-3xl bg-[#111214] px-5 md:px-6 lg:px-8 pt-6 md:pt-8 lg:pt-10 pb-6 md:pb-8 gap-8 md:gap-12 lg:gap-16 relative"
+              className="flex flex-col justify-start rounded-3xl bg-white dark:bg-[#111214] px-5 md:px-6 lg:px-8 pt-6 md:pt-8 lg:pt-10 pb-6 md:pb-8 gap-8 md:gap-12 lg:gap-16 relative"
               style={{
                 boxShadow: "0px 8px 40px 0px #2466F226",
               }}
@@ -261,7 +261,7 @@ const Curriculum = () => {
               ></div>
               {/* Pricing header */}
               <div className="relative z-10">
-                <h2 className="text-[#E0E3E5] text-xl md:text-2xl lg:text-[30px] leading-[135%] font-medium">
+                <h2 className="text-gray-800 dark:text-[#E0E3E5] text-xl md:text-2xl lg:text-[30px] leading-[135%] font-medium">
                   Not Only Video Lessons!
                 </h2>
               </div>
@@ -270,7 +270,7 @@ const Curriculum = () => {
               <div className="flex flex-col justify-baseline gap-4 md:gap-6 relative z-10">
                 <div className="flex items-center gap-3 md:gap-4 lg:gap-5">
                   <div
-                    className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 rounded-full bg-[#171B21] flex items-center justify-center relative shrink-0"
+                    className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 rounded-full bg-white dark:bg-[#171B21] flex items-center justify-center relative shrink-0"
                     style={{
                       boxShadow: "0px 8px 40px 0px #2466F226",
                     }}
@@ -288,15 +288,15 @@ const Curriculum = () => {
                         maskComposite: "exclude",
                       }}
                     ></div>
-                    <TbRosetteDiscountCheckFilled className="text-white w-3 h-3 md:w-3.5 md:h-3.5 lg:w-4 lg:h-4" />
+                    <TbRosetteDiscountCheckFilled className="text-[#2466F2] dark:text-white w-3 h-3 md:w-3.5 md:h-3.5 lg:w-4 lg:h-4" />
                   </div>
-                  <span className="text-[#D0D5D9] text-sm md:text-[15px] leading-[135%] font-normal">
+                  <span className="text-gray-700 dark:text-[#D0D5D9] text-sm md:text-[15px] leading-[135%] font-normal">
                     6h of videos - Step-by-step deep work strategies.
                   </span>
                 </div>
                 <div className="flex items-center gap-3 md:gap-4 lg:gap-5">
                   <div
-                    className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 rounded-full bg-[#171B21] flex items-center justify-center relative shrink-0"
+                    className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 rounded-full bg-white dark:bg-[#171B21] flex items-center justify-center relative shrink-0"
                     style={{
                       boxShadow: "0px 8px 40px 0px #2466F226",
                     }}
@@ -314,15 +314,15 @@ const Curriculum = () => {
                         maskComposite: "exclude",
                       }}
                     ></div>
-                    <TbRosetteDiscountCheckFilled className="text-white w-3 h-3 md:w-3.5 md:h-3.5 lg:w-4 lg:h-4" />
+                    <TbRosetteDiscountCheckFilled className="text-[#2466F2] dark:text-white w-3 h-3 md:w-3.5 md:h-3.5 lg:w-4 lg:h-4" />
                   </div>
-                  <span className="text-[#D0D5D9] text-sm md:text-[15px] leading-[135%] font-normal">
+                  <span className="text-gray-700 dark:text-[#D0D5D9] text-sm md:text-[15px] leading-[135%] font-normal">
                     Templates & Trackers – Stay on track effortlessly.
                   </span>
                 </div>
                 <div className="flex items-center gap-3 md:gap-4 lg:gap-5">
                   <div
-                    className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 rounded-full bg-[#171B21] flex items-center justify-center relative shrink-0"
+                    className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 rounded-full bg-white dark:bg-[#171B21] flex items-center justify-center relative shrink-0"
                     style={{
                       boxShadow: "0px 8px 40px 0px #2466F226",
                     }}
@@ -340,15 +340,15 @@ const Curriculum = () => {
                         maskComposite: "exclude",
                       }}
                     ></div>
-                    <TbRosetteDiscountCheckFilled className="text-white w-3 h-3 md:w-3.5 md:h-3.5 lg:w-4 lg:h-4" />
+                    <TbRosetteDiscountCheckFilled className="text-[#2466F2] dark:text-white w-3 h-3 md:w-3.5 md:h-3.5 lg:w-4 lg:h-4" />
                   </div>
-                  <span className="text-[#D0D5D9] text-sm md:text-[15px] leading-[135%] font-normal">
+                  <span className="text-gray-700 dark:text-[#D0D5D9] text-sm md:text-[15px] leading-[135%] font-normal">
                     Live Q&As – Expert guidance & accountability.
                   </span>
                 </div>
                 <div className="flex items-center gap-3 md:gap-4 lg:gap-5">
                   <div
-                    className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 rounded-full bg-[#171B21] flex items-center justify-center relative shrink-0"
+                    className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 rounded-full bg-white dark:bg-[#171B21] flex items-center justify-center relative shrink-0"
                     style={{
                       boxShadow: "0px 8px 40px 0px #2466F226",
                     }}
@@ -366,9 +366,9 @@ const Curriculum = () => {
                         maskComposite: "exclude",
                       }}
                     ></div>
-                    <TbRosetteDiscountCheckFilled className="text-white w-3 h-3 md:w-3.5 md:h-3.5 lg:w-4 lg:h-4" />
+                    <TbRosetteDiscountCheckFilled className="text-[#2466F2] dark:text-white w-3 h-3 md:w-3.5 md:h-3.5 lg:w-4 lg:h-4" />
                   </div>
-                  <span className="text-[#D0D5D9] text-sm md:text-[15px] leading-[135%] font-normal">
+                  <span className="text-gray-700 dark:text-[#D0D5D9] text-sm md:text-[15px] leading-[135%] font-normal">
                     Exclusive Community – Connect with others.
                   </span>
                 </div>

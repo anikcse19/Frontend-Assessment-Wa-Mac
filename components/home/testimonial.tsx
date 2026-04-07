@@ -24,27 +24,27 @@ const Testimonial = () => {
       {/* header */}
       <div className="flex flex-col gap-6 md:gap-8 py-16 md:py-24 lg:py-40 px-4 md:px-10">
         <Badge text="Testimonials" />
-        <h2 className="text-4xl md:text-5xl lg:text-[52px] tracking-tighter leading-[115%] text-center text-[#E0E3E5] max-w-xl md:max-w-2xl lg:max-w-100 mx-auto">
+        <h2 className="text-4xl md:text-5xl lg:text-[52px] tracking-tighter leading-[115%] text-center text-gray-800 dark:text-[#E0E3E5] max-w-xl md:max-w-2xl lg:max-w-100 mx-auto">
           Real Results from Real People
         </h2>
       </div>
       {/* testimonials */}
-      <section className="text-white flex flex-col gap-6 md:gap-8 px-4 md:px-6">
+      <section className="text-gray-900 dark:text-white flex flex-col gap-6 md:gap-8 px-4 md:px-6">
         {/* Header Area */}
         <div className="flex flex-row justify-between items-center gap-4">
-          <h2 className="text-xl md:text-2xl lg:text-3xl font-medium tracking-tight text-left sm:text-left lg:px-8">
+          <h2 className="text-xl md:text-2xl lg:text-3xl font-medium tracking-tight text-left sm:text-left lg:px-8 text-gray-900 dark:text-white">
             Join with 5K other students
           </h2>
           <div className="flex gap-2 md:gap-3">
             <button
               onClick={() => scroll("left")}
-              className="p-2 md:p-3 rounded-full bg-[#1A1C20] hover:bg-[#2A2D32] transition-colors cursor-pointer"
+              className="p-2 md:p-3 rounded-full bg-gray-200 dark:bg-[#1A1C20] hover:bg-gray-300 dark:hover:bg-[#2A2D32] transition-colors cursor-pointer"
             >
               <ChevronLeft size={18} className="md:w-5 md:h-5" />
             </button>
             <button
               onClick={() => scroll("right")}
-              className="p-2 md:p-3 rounded-full bg-[#1A1C20] hover:bg-[#2A2D32] transition-colors cursor-pointer"
+              className="p-2 md:p-3 rounded-full bg-gray-200 dark:bg-[#1A1C20] hover:bg-gray-300 dark:hover:bg-[#2A2D32] transition-colors cursor-pointer"
             >
               <ChevronRight size={18} className="md:w-5 md:h-5" />
             </button>

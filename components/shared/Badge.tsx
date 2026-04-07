@@ -2,9 +2,9 @@ import React from "react";
 
 const Badge = ({ text }: { text: string }) => {
   return (
-    <div className="text-white">
+    <div className="text-gray-900 dark:text-white">
       <div
-        className="py-2 px-4 rounded-xl flex items-center gap-2 w-max mx-auto mb-6 relative bg-[#171B21]"
+        className="py-2 px-4 rounded-xl flex items-center gap-2 w-max mx-auto mb-6 relative bg-white dark:bg-[#171B21]"
         style={{
           boxShadow: "0px 8px 40px 0px rgba(36, 102, 242, 0.25)",
         }}
