@@ -147,14 +147,25 @@ const Curriculum = () => {
     });
   };
 
-  const headerRef = useScrollAnimation<HTMLDivElement>("fadeInUp", { duration: 0.8 });
-  const leftSectionRef = useScrollAnimation<HTMLDivElement>("fadeInLeft", { delay: 0.2, duration: 0.8 });
-  const rightSectionRef = useScrollAnimation<HTMLDivElement>("fadeInRight", { delay: 0.3, duration: 0.8 });
+  const headerRef = useScrollAnimation<HTMLDivElement>("fadeInUp", {
+    duration: 0.8,
+  });
+  const leftSectionRef = useScrollAnimation<HTMLDivElement>("fadeInLeft", {
+    delay: 0.2,
+    duration: 0.8,
+  });
+  const rightSectionRef = useScrollAnimation<HTMLDivElement>("fadeInRight", {
+    delay: 0.3,
+    duration: 0.8,
+  });
 
   return (
     <div id="curriculum" className="flex flex-col py-10 md:py-16 lg:py-20">
       {/* header */}
-      <div ref={headerRef} className="flex flex-col gap-6 md:gap-8 py-16 md:py-24 lg:py-40 px-4 md:px-10">
+      <div
+        ref={headerRef}
+        className="flex flex-col gap-6 md:gap-8 py-16 md:py-24 lg:py-40 px-4 md:px-10"
+      >
         <Badge text="Course Curriculum" />
         <h2 className="text-gray-800 dark:text-[#E0E3E5] text-2xl md:text-3xl lg:text-[40px] max-w-2xl md:max-w-4xl lg:max-w-160 mx-auto text-center leading-[115%] tracking-tighter">
           Mastering Deep Work: A Structured Path to Peak Productivity
@@ -163,7 +174,10 @@ const Curriculum = () => {
       {/* content */}
       <div className="flex flex-col lg:flex-row gap-8 md:gap-12 lg:gap-15 px-4 md:px-10 lg:justify-center">
         {/* left */}
-        <div ref={leftSectionRef} className="flex flex-col w-full lg:max-w-140 pt-10 md:pt-16 lg:pt-25">
+        <div
+          ref={leftSectionRef}
+          className="flex flex-col w-full lg:max-w-140 pt-10 md:pt-16 lg:pt-25"
+        >
           {modules.map((module) => (
             <div key={module.id} className="flex flex-col">
               {/* module header */}
@@ -243,7 +257,10 @@ const Curriculum = () => {
           ))}
         </div>
         {/* right */}
-        <div ref={rightSectionRef} className="pt-10 md:pt-16 lg:pt-25 w-full lg:w-auto">
+        <div
+          ref={rightSectionRef}
+          className="pt-10 md:pt-16 lg:pt-25 w-full lg:w-auto"
+        >
           <div className="lg:sticky lg:top-24">
             <div
               className="flex flex-col justify-start rounded-3xl bg-white dark:bg-[#111214] px-5 md:px-6 lg:px-8 pt-6 md:pt-8 lg:pt-10 pb-6 md:pb-8 gap-8 md:gap-12 lg:gap-16 relative"
@@ -383,7 +400,7 @@ const Curriculum = () => {
               <div className="bg-[#2466F2] py-2 md:py-3 lg:py-3 px-4 md:px-5 rounded-xl flex items-center justify-center relative z-10">
                 <a
                   href="#enroll"
-                  className="font-medium leading-[135%] text-sm md:text-base lg:text-[17px]"
+                  className="font-medium leading-[135%] text-sm md:text-base lg:text-[17px] text-white"
                 >
                   Enroll Now
                 </a>

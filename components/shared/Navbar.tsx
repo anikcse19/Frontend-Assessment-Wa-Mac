@@ -229,7 +229,7 @@ const Navbar = () => {
                 size="md"
                 onClick={() => {
                   setIsMobileMenuOpen(false);
-                  handleNavClick("enroll");
+                  handleNavClick("#enroll");
                 }}
                 className="w-full"
               >

@@ -149,17 +149,15 @@ const HeroSection = () => {
         {/* Hero Heading */}
         <div ref={headingRef} className="text-center mb-6 md:mb-8">
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-[72px] font-bold tracking-tight text-gray-900 dark:text-white leading-[110%]">
-            Master Deep Work &{" "}
-            <span className="text-[#2466F2]">Transform Your</span> Productivity
+            Master Focus & Get More Done in Less Time
           </h1>
         </div>
 
         {/* Subheading */}
         <div ref={subheadingRef} className="text-center mb-8 md:mb-10">
           <p className="text-base sm:text-lg md:text-xl text-gray-600 dark:text-[#D0D5D9] max-w-3xl mx-auto leading-relaxed">
-            Learn the science-backed techniques to achieve laser-focused
-            concentration, eliminate distractions, and accomplish more in less
-            time.
+            A step-by-step system to eliminate procrastination, train your brain
+            for deep work, and boost productivity effortlessly.
           </p>
         </div>
 
@@ -169,14 +167,14 @@ const HeroSection = () => {
           className="flex flex-row items-center justify-center gap-4 sm:gap-6 mb-10 md:mb-16"
         >
           <Button
-            onClick={() => router.push("/pricing")}
+            onClick={() => router.push("#enroll")}
             className="w-full sm:w-auto px-8 py-4 text-base sm:text-lg"
           >
             Enroll Now
           </Button>
           <Button
             variant="secondary"
-            onClick={() => router.push("/curriculum")}
+            onClick={() => router.push("#curriculum")}
             className="w-full sm:w-auto px-8 py-4 text-base sm:text-lg"
           >
             Curriculum
