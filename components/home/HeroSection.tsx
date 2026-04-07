@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Navbar from "../shared/Navbar";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import { Button } from "../ui/Button";
 
 const HeroSection = () => {
   const [timeLeft, setTimeLeft] = useState({
@@ -90,18 +91,20 @@ const HeroSection = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-row items-center justify-center gap-3 md:gap-4 px-4">
-            <button
+            <Button
+              variant="primary"
+              size="md"
               onClick={() => router.push("#enroll")}
-              className="cursor-pointer px-5 sm:px-6 py-3 bg-[#2466F2] hover:bg-[#2563EB] text-white text-sm sm:text-base font-semibold rounded-lg transition-all duration-200 hover:scale-105 active:scale-95"
             >
               Enroll now
-            </button>
-            <button
+            </Button>
+            <Button
+              variant="secondary"
+              size="md"
               onClick={() => router.push("#curriculum")}
-              className="cursor-pointer px-5 sm:px-6 py-3 bg-gray-200 dark:bg-[#171B21] hover:bg-gray-300 dark:hover:bg-[#334155] text-gray-900 dark:text-white text-sm sm:text-base font-normal rounded-lg transition-all duration-200 hover:scale-105 active:scale-95"
             >
               Curriculum
-            </button>
+            </Button>
           </div>
         </div>
 

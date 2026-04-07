@@ -1,9 +1,9 @@
 import React from "react";
 import Badge from "../shared/Badge";
-import Image from "next/image";
 import { HiOutlineLightBulb } from "react-icons/hi";
 import { LuBrain, LuRoute } from "react-icons/lu";
 import { TbRosetteDiscountCheckFilled } from "react-icons/tb";
+import { IconCircle } from "../ui/IconCircle";
 
 const Benefits = () => {
   return (
@@ -32,27 +32,7 @@ const Benefits = () => {
               ></span>
             </div>
             <div className="flex flex-row md:flex-col gap-3 md:gap-5 p-4 md:p-5 flex-1 md:w-75">
-              <div
-                className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 rounded-full bg-white dark:bg-[#171B21] flex items-center justify-center relative shrink-0"
-                style={{
-                  boxShadow: "0px 8px 40px 0px #2466F226",
-                }}
-              >
-                {/* Gradient border overlay */}
-                <div
-                  className="absolute inset-0 rounded-full pointer-events-none"
-                  style={{
-                    padding: "1px",
-                    background:
-                      "radial-gradient(61.03% 66.18% at 50% 50%, #2466F2 0%, rgba(36, 102, 242, 0) 100%)",
-                    WebkitMask:
-                      "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
-                    WebkitMaskComposite: "xor",
-                    maskComposite: "exclude",
-                  }}
-                ></div>
-                <HiOutlineLightBulb className="text-[#2466F2] dark:text-white w-5 h-5 md:w-[23px] md:h-[23px]" />
-              </div>
+              <IconCircle size="md" icon={<HiOutlineLightBulb />} />
               <p className="text-gray-700 dark:text-[#D0D5D9] text-lg md:text-xl lg:text-[24px] leading-[135%] font-normal">
                 Develop laser-sharp focus & eliminate distractions.
               </p>
@@ -72,27 +52,7 @@ const Benefits = () => {
               ></span>
             </div>
             <div className="flex flex-row md:flex-col gap-3 md:gap-5 p-4 md:p-5 flex-1">
-              <div
-                className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 rounded-full bg-white dark:bg-[#171B21] flex items-center justify-center relative shrink-0"
-                style={{
-                  boxShadow: "0px 8px 40px 0px #2466F226",
-                }}
-              >
-                {/* Gradient border overlay */}
-                <div
-                  className="absolute inset-0 rounded-full pointer-events-none"
-                  style={{
-                    padding: "1px",
-                    background:
-                      "radial-gradient(61.03% 66.18% at 50% 50%, #2466F2 0%, rgba(36, 102, 242, 0) 100%)",
-                    WebkitMask:
-                      "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
-                    WebkitMaskComposite: "xor",
-                    maskComposite: "exclude",
-                  }}
-                ></div>
-                <LuBrain className="text-[#2466F2] dark:text-white w-5 h-5 md:w-[23px] md:h-[23px]" />
-              </div>
+              <IconCircle size="md" icon={<LuBrain />} />
               <span className="text-gray-700 dark:text-[#D0D5D9] text-lg md:text-xl lg:text-[22px] leading-[135%] font-normal">
                 Master deep work techniques for smarter productivity.
               </span>
@@ -112,27 +72,7 @@ const Benefits = () => {
               ></span>
             </div>
             <div className="flex flex-row md:flex-col gap-3 md:gap-5 p-4 md:p-5 flex-1">
-              <div
-                className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 rounded-full bg-white dark:bg-[#171B21] flex items-center justify-center relative shrink-0"
-                style={{
-                  boxShadow: "0px 8px 40px 0px #2466F226",
-                }}
-              >
-                {/* Gradient border overlay */}
-                <div
-                  className="absolute inset-0 rounded-full pointer-events-none"
-                  style={{
-                    padding: "1px",
-                    background:
-                      "radial-gradient(61.03% 66.18% at 50% 50%, #2466F2 0%, rgba(36, 102, 242, 0) 100%)",
-                    WebkitMask:
-                      "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
-                    WebkitMaskComposite: "xor",
-                    maskComposite: "exclude",
-                  }}
-                ></div>
-                <TbRosetteDiscountCheckFilled className="text-[#2466F2] dark:text-white w-5 h-5 md:w-[23px] md:h-[23px]" />
-              </div>
+              <IconCircle size="md" icon={<TbRosetteDiscountCheckFilled />} />
               <span className="text-gray-700 dark:text-[#D0D5D9] text-lg md:text-xl lg:text-[22px] leading-[135%] font-normal">
                 Overcome procrastination & get more done.
               </span>
@@ -152,27 +92,7 @@ const Benefits = () => {
               ></span>
             </div>
             <div className="flex flex-row md:flex-col gap-3 md:gap-5 p-4 md:p-5 flex-1">
-              <div
-                className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 rounded-full bg-white dark:bg-[#171B21] flex items-center justify-center relative shrink-0"
-                style={{
-                  boxShadow: "0px 8px 40px 0px #2466F226",
-                }}
-              >
-                {/* Gradient border overlay */}
-                <div
-                  className="absolute inset-0 rounded-full pointer-events-none"
-                  style={{
-                    padding: "1px",
-                    background:
-                      "radial-gradient(61.03% 66.18% at 50% 50%, #2466F2 0%, rgba(36, 102, 242, 0) 100%)",
-                    WebkitMask:
-                      "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
-                    WebkitMaskComposite: "xor",
-                    maskComposite: "exclude",
-                  }}
-                ></div>
-                <LuRoute className="text-[#2466F2] dark:text-white w-5 h-5 md:w-[23px] md:h-[23px]" />
-              </div>
+              <IconCircle size="md" icon={<LuRoute />} />
               <span className="text-gray-700 dark:text-[#D0D5D9] text-lg md:text-xl lg:text-[22px] leading-[135%] font-normal">
                 Build lasting habits for long-term success.
               </span>

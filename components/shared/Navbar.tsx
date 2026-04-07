@@ -6,6 +6,7 @@ import { useRouter } from "next/navigation";
 import { useState, useEffect } from "react";
 import { MdSunny } from "react-icons/md";
 import { useTheme } from "@/contexts/ThemeContext";
+import { Button } from "../ui/Button";
 
 const Navbar = () => {
   const { isDarkMode, toggleTheme } = useTheme();
@@ -128,12 +129,14 @@ const Navbar = () => {
               </button>
 
               {/* Enroll Now Button - Desktop Only */}
-              <button
+              <Button
+                variant="primary"
+                size="md"
                 onClick={() => router.push("#enroll")}
-                className="bg-[#2466F2] hover:bg-[#5282e9] hidden md:flex text-white text-base font-bold px-5 py-3 rounded-xl transition-all duration-200 cursor-pointer"
+                className="hidden md:flex"
               >
                 Enroll now
-              </button>
+              </Button>
 
               {/* Mobile menu button */}
               <button
@@ -219,15 +222,17 @@ const Navbar = () => {
 
             {/* Enroll Now Button - Mobile */}
             <div className="absolute bottom-6 left-6 right-6">
-              <button
+              <Button
+                variant="primary"
+                size="md"
                 onClick={() => {
                   setIsMobileMenuOpen(false);
                   handleNavClick("enroll");
                 }}
-                className="w-full bg-[#2466F2] hover:bg-[#5282e9] text-white text-base font-bold px-5 py-3 rounded-xl transition-all duration-200 cursor-pointer"
+                className="w-full"
               >
                 Enroll now
-              </button>
+              </Button>
             </div>
           </div>
         </div>

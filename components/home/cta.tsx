@@ -4,6 +4,7 @@ import {
   TbHexagonPlusFilled,
   TbRosetteDiscountCheckFilled,
 } from "react-icons/tb";
+import { IconCircle } from "../ui/IconCircle";
 
 const CTA = () => {
   return (
@@ -24,53 +25,13 @@ const CTA = () => {
         </div>
         <div className="flex flex-col gap-4 md:gap-6">
           <div className="flex items-center gap-3">
-            <div
-              className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 rounded-full bg-white dark:bg-[#171B21] flex items-center justify-center relative shrink-0"
-              style={{
-                boxShadow: "0px 8px 40px 0px #2466F226",
-              }}
-            >
-              {/* Gradient border overlay */}
-              <div
-                className="absolute inset-0 rounded-full pointer-events-none"
-                style={{
-                  padding: "1px",
-                  background:
-                    "radial-gradient(61.03% 66.18% at 50% 50%, #2466F2 0%, rgba(36, 102, 242, 0) 100%)",
-                  WebkitMask:
-                    "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
-                  WebkitMaskComposite: "xor",
-                  maskComposite: "exclude",
-                }}
-              ></div>
-              <TbHexagonPlusFilled className="text-[#2466F2] dark:text-white w-5 h-5 md:w-[23px] md:h-[23px]" />
-            </div>
+            <IconCircle size="md" icon={<TbHexagonPlusFilled />} />
             <p className="text-gray-500 dark:text-[#AAAEB2] text-sm md:text-[15px]">
               Bonus: 1:1 coaching session to boost focus.
             </p>
           </div>
           <div className="flex items-center gap-3">
-            <div
-              className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 rounded-full bg-white dark:bg-[#171B21] flex items-center justify-center relative shrink-0"
-              style={{
-                boxShadow: "0px 8px 40px 0px #2466F226",
-              }}
-            >
-              {/* Gradient border overlay */}
-              <div
-                className="absolute inset-0 rounded-full pointer-events-none"
-                style={{
-                  padding: "1px",
-                  background:
-                    "radial-gradient(61.03% 66.18% at 50% 50%, #2466F2 0%, rgba(36, 102, 242, 0) 100%)",
-                  WebkitMask:
-                    "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
-                  WebkitMaskComposite: "xor",
-                  maskComposite: "exclude",
-                }}
-              ></div>
-              <TbHexagonPlusFilled className="text-[#2466F2] dark:text-white w-5 h-5 md:w-[23px] md:h-[23px]" />
-            </div>
+            <IconCircle size="md" icon={<TbHexagonPlusFilled />} />
             <p className="text-gray-500 dark:text-[#AAAEB2] text-sm md:text-[15px]">
               Discount: Save 30% when you enroll now!
             </p>
@@ -126,105 +87,25 @@ const CTA = () => {
         {/* Features */}
         <div className="flex flex-col justify-baseline gap-4 md:gap-6 relative z-10">
           <div className="flex items-center gap-3 md:gap-5">
-            <div
-              className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 rounded-full bg-white dark:bg-[#171B21] flex items-center justify-center relative shrink-0"
-              style={{
-                boxShadow: "0px 8px 40px 0px #2466F226",
-              }}
-            >
-              {/* Gradient border overlay */}
-              <div
-                className="absolute inset-0 rounded-full pointer-events-none"
-                style={{
-                  padding: "1px",
-                  background:
-                    "radial-gradient(61.03% 66.18% at 50% 50%, #2466F2 0%, rgba(36, 102, 242, 0) 100%)",
-                  WebkitMask:
-                    "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
-                  WebkitMaskComposite: "xor",
-                  maskComposite: "exclude",
-                }}
-              ></div>
-              <TbRosetteDiscountCheckFilled className="text-[#2466F2] dark:text-white w-3 h-3 md:w-3.5 md:h-3.5 lg:w-4 lg:h-4" />
-            </div>
+            <IconCircle size="xs" icon={<TbRosetteDiscountCheckFilled />} />
             <span className="text-gray-700 dark:text-[#D0D5D9] text-xs md:text-sm lg:text-[15px] leading-[135%] font-normal">
               6h of videos - Step-by-step deep work strategies.
             </span>
           </div>
           <div className="flex items-center gap-3 md:gap-5">
-            <div
-              className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 rounded-full bg-white dark:bg-[#171B21] flex items-center justify-center relative shrink-0"
-              style={{
-                boxShadow: "0px 8px 40px 0px #2466F226",
-              }}
-            >
-              {/* Gradient border overlay */}
-              <div
-                className="absolute inset-0 rounded-full pointer-events-none"
-                style={{
-                  padding: "1px",
-                  background:
-                    "radial-gradient(61.03% 66.18% at 50% 50%, #2466F2 0%, rgba(36, 102, 242, 0) 100%)",
-                  WebkitMask:
-                    "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
-                  WebkitMaskComposite: "xor",
-                  maskComposite: "exclude",
-                }}
-              ></div>
-              <TbRosetteDiscountCheckFilled className="text-[#2466F2] dark:text-white w-3 h-3 md:w-3.5 md:h-3.5 lg:w-4 lg:h-4" />
-            </div>
+            <IconCircle size="xs" icon={<TbRosetteDiscountCheckFilled />} />
             <span className="text-gray-700 dark:text-[#D0D5D9] text-xs md:text-sm lg:text-[15px] leading-[135%] font-normal">
               Templates & Trackers – Stay on track effortlessly.
             </span>
           </div>
           <div className="flex items-center gap-3 md:gap-5">
-            <div
-              className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 rounded-full bg-white dark:bg-[#171B21] flex items-center justify-center relative shrink-0"
-              style={{
-                boxShadow: "0px 8px 40px 0px #2466F226",
-              }}
-            >
-              {/* Gradient border overlay */}
-              <div
-                className="absolute inset-0 rounded-full pointer-events-none"
-                style={{
-                  padding: "1px",
-                  background:
-                    "radial-gradient(61.03% 66.18% at 50% 50%, #2466F2 0%, rgba(36, 102, 242, 0) 100%)",
-                  WebkitMask:
-                    "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
-                  WebkitMaskComposite: "xor",
-                  maskComposite: "exclude",
-                }}
-              ></div>
-              <TbRosetteDiscountCheckFilled className="text-[#2466F2] dark:text-white w-3 h-3 md:w-3.5 md:h-3.5 lg:w-4 lg:h-4" />
-            </div>
+            <IconCircle size="xs" icon={<TbRosetteDiscountCheckFilled />} />
             <span className="text-gray-700 dark:text-[#D0D5D9] text-xs md:text-sm lg:text-[15px] leading-[135%] font-normal">
               Live Q&As – Expert guidance & accountability.
             </span>
           </div>
           <div className="flex items-center gap-3 md:gap-5">
-            <div
-              className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 rounded-full bg-white dark:bg-[#171B21] flex items-center justify-center relative shrink-0"
-              style={{
-                boxShadow: "0px 8px 40px 0px #2466F226",
-              }}
-            >
-              {/* Gradient border overlay */}
-              <div
-                className="absolute inset-0 rounded-full pointer-events-none"
-                style={{
-                  padding: "1px",
-                  background:
-                    "radial-gradient(61.03% 66.18% at 50% 50%, #2466F2 0%, rgba(36, 102, 242, 0) 100%)",
-                  WebkitMask:
-                    "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
-                  WebkitMaskComposite: "xor",
-                  maskComposite: "exclude",
-                }}
-              ></div>
-              <TbRosetteDiscountCheckFilled className="text-[#2466F2] dark:text-white w-3 h-3 md:w-3.5 md:h-3.5 lg:w-4 lg:h-4" />
-            </div>
+            <IconCircle size="xs" icon={<TbRosetteDiscountCheckFilled />} />
             <span className="text-gray-700 dark:text-[#D0D5D9] text-xs md:text-sm lg:text-[15px] leading-[135%] font-normal">
               Exclusive Community – Connect with others.
             </span>
