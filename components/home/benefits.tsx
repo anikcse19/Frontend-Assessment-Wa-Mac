@@ -1,15 +1,24 @@
+"use client";
+
 import React from "react";
 import Badge from "../shared/Badge";
 import { HiOutlineLightBulb } from "react-icons/hi";
 import { LuBrain, LuRoute } from "react-icons/lu";
 import { TbRosetteDiscountCheckFilled } from "react-icons/tb";
 import { IconCircle } from "../ui/IconCircle";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const Benefits = () => {
+  const sectionTitleRef = useScrollAnimation<HTMLDivElement>("fadeInUp", { duration: 0.8 });
+  const benefit1Ref = useScrollAnimation<HTMLDivElement>("fadeInLeft", { delay: 0.1, duration: 0.8 });
+  const benefit2Ref = useScrollAnimation<HTMLDivElement>("fadeInLeft", { delay: 0.2, duration: 0.8 });
+  const benefit3Ref = useScrollAnimation<HTMLDivElement>("fadeInLeft", { delay: 0.3, duration: 0.8 });
+  const benefit4Ref = useScrollAnimation<HTMLDivElement>("fadeInLeft", { delay: 0.4, duration: 0.8 });
+
   return (
     <div id="overview" className="py-10 md:py-16 lg:py-20">
       {/* section title */}
-      <div className="flex flex-col gap-6 md:gap-8 py-16 md:py-24 lg:py-40 px-4 md:px-10">
+      <div ref={sectionTitleRef} className="flex flex-col gap-6 md:gap-8 py-16 md:py-24 lg:py-40 px-4 md:px-10">
         <Badge text="The Deep Work Blueprint" />
         <p className="text-2xl md:text-3xl lg:text-[40px] text-gray-800 dark:text-[#E0E3E5] max-w-2xl md:max-w-4xl lg:max-w-150 mx-auto text-center lg:text-left">
           A self-paced, results-driven course designed to help you
@@ -19,7 +28,7 @@ const Benefits = () => {
       <div className="flex justify-center px-4 md:px-10">
         <div className="flex flex-col max-w-full md:max-w-95 w-full md:w-95 gap-6 md:gap-8">
           {/* point 1 */}
-          <div className="flex items-center justify-between w-full gap-4 md:gap-8 lg:gap-15">
+          <div ref={benefit1Ref} className="flex items-center justify-between w-full gap-4 md:gap-8 lg:gap-15">
             {/* connector */}
             <div className="flex flex-col items-center gap-4 md:gap-6 lg:gap-8 w-4 md:w-5 shrink-0">
               <span className="w-4 h-4 md:w-5 md:h-5 rounded-full bg-[#2466F2]"></span>
@@ -39,7 +48,7 @@ const Benefits = () => {
             </div>
           </div>
           {/* point 2 */}
-          <div className="flex items-center justify-between w-full gap-4 md:gap-8 lg:gap-15">
+          <div ref={benefit2Ref} className="flex items-center justify-between w-full gap-4 md:gap-8 lg:gap-15">
             {/* connector */}
             <div className="flex flex-col items-center gap-4 md:gap-6 lg:gap-8 w-4 md:w-5 shrink-0">
               <span className="w-4 h-4 md:w-5 md:h-5 rounded-full bg-[#2466F2]"></span>
@@ -59,7 +68,7 @@ const Benefits = () => {
             </div>
           </div>
           {/* point 3 */}
-          <div className="flex items-center justify-between w-full gap-4 md:gap-8 lg:gap-15">
+          <div ref={benefit3Ref} className="flex items-center justify-between w-full gap-4 md:gap-8 lg:gap-15">
             {/* connector */}
             <div className="flex flex-col items-center gap-4 md:gap-6 lg:gap-8 w-4 md:w-5 shrink-0">
               <span className="w-4 h-4 md:w-5 md:h-5 rounded-full bg-[#2466F2]"></span>
@@ -79,7 +88,7 @@ const Benefits = () => {
             </div>
           </div>
           {/* point 4 */}
-          <div className="flex items-center justify-between w-full gap-4 md:gap-8 lg:gap-15">
+          <div ref={benefit4Ref} className="flex items-center justify-between w-full gap-4 md:gap-8 lg:gap-15">
             {/* connector */}
             <div className="flex flex-col items-center gap-4 md:gap-6 lg:gap-8 w-4 md:w-5 shrink-0">
               <span className="w-4 h-4 md:w-5 md:h-5 rounded-full bg-[#2466F2]"></span>

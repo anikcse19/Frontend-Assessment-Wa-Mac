@@ -5,9 +5,13 @@ import Badge from "../shared/Badge";
 import VideoCard from "../testimonials/video-card";
 import TextCard from "../testimonials/text-card";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const Testimonial = () => {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
+
+  const headerRef = useScrollAnimation<HTMLDivElement>("fadeInUp", { duration: 0.8 });
+  const cardsContainerRef = useScrollAnimation<HTMLDivElement>("stagger", { duration: 0.6, stagger: 0.15 });
 
   const scroll = (direction: "left" | "right") => {
     if (scrollContainerRef.current) {
@@ -22,7 +26,7 @@ const Testimonial = () => {
   return (
     <div id="testimonials" className="py-10 md:py-16 lg:py-20 w-full">
       {/* header */}
-      <div className="flex flex-col gap-6 md:gap-8 py-16 md:py-24 lg:py-40 px-4 md:px-10">
+      <div ref={headerRef} className="flex flex-col gap-6 md:gap-8 py-16 md:py-24 lg:py-40 px-4 md:px-10">
         <Badge text="Testimonials" />
         <h2 className="text-4xl md:text-5xl lg:text-[52px] tracking-tighter leading-[115%] text-center text-gray-800 dark:text-[#E0E3E5] max-w-xl md:max-w-2xl lg:max-w-100 mx-auto">
           Real Results from Real People
@@ -56,36 +60,38 @@ const Testimonial = () => {
           ref={scrollContainerRef}
           className="flex gap-4 md:gap-6 overflow-x-auto scrollbar-hide pb-4 scroll-smooth snap-x snap-mandatory -mx-4 px-4 md:mx-0"
         >
-          <TextCard
-            avatar="/images/testimonials/Avatar1.png"
-            text="As someone who juggles multiple projects, staying focused was always a challenge. This course gave me the tools to cut through distractions and work with absolute clarity. My productivity has never been better!"
-            name="Alex Carter"
-            role="Freelance Designer"
-          />
-          <VideoCard
-            avatar="/images/testimonials/Avatar2.png"
-            bgImage="/images/testimonials/video-bg1.jpg"
-            name="Daniel Foster"
-            role="Content creator"
-          />
-          <TextCard
-            avatar="/images/testimonials/Avatar3.png"
-            text="I never realized how much distractions were holding me back. After applying the deep work techniques, I feel more in control of my time and energy. My efficiency has doubled!"
-            name="Mark Davidson"
-            role="Software Developer"
-          />
-          <VideoCard
-            avatar="/images/testimonials/Avatar4.png"
-            bgImage="/images/testimonials/video-bg2.jpg"
-            name="Tom David"
-            role="Entrepreneur"
-          />
-          <TextCard
-            avatar="/images/testimonials/Avatar3.png"
-            text="I never realized how much distractions were holding me back. After applying the deep work techniques, I feel more in control of my time and energy. My efficiency has doubled!"
-            name="Mark Davidson"
-            role="Software Developer"
-          />
+          <div ref={cardsContainerRef} className="contents">
+            <TextCard
+              avatar="/images/testimonials/Avatar1.png"
+              text="As someone who juggles multiple projects, staying focused was always a challenge. This course gave me the tools to cut through distractions and work with absolute clarity. My productivity has never been better!"
+              name="Alex Carter"
+              role="Freelance Designer"
+            />
+            <VideoCard
+              avatar="/images/testimonials/Avatar2.png"
+              bgImage="/images/testimonials/video-bg1.jpg"
+              name="Daniel Foster"
+              role="Content creator"
+            />
+            <TextCard
+              avatar="/images/testimonials/Avatar3.png"
+              text="I never realized how much distractions were holding me back. After applying the deep work techniques, I feel more in control of my time and energy. My efficiency has doubled!"
+              name="Mark Davidson"
+              role="Software Developer"
+            />
+            <VideoCard
+              avatar="/images/testimonials/Avatar4.png"
+              bgImage="/images/testimonials/video-bg2.jpg"
+              name="Tom David"
+              role="Entrepreneur"
+            />
+            <TextCard
+              avatar="/images/testimonials/Avatar3.png"
+              text="I never realized how much distractions were holding me back. After applying the deep work techniques, I feel more in control of my time and energy. My efficiency has doubled!"
+              name="Mark Davidson"
+              role="Software Developer"
+            />
+          </div>
         </div>
       </section>
     </div>

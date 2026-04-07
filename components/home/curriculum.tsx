@@ -7,6 +7,7 @@ import ModuleHeader from "../curriculum/module-header";
 import { TbRosetteDiscountCheckFilled } from "react-icons/tb";
 import { FaCaretUp } from "react-icons/fa";
 import Image from "next/image";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 interface Module {
   id: string;
@@ -28,7 +29,7 @@ const modules: Module[] = [
     lessons: [
       {
         id: "1-1",
-        title: "Understanding Focus & Distraction",
+        title: "Understanding Focus &amp; Distraction",
         duration: "14:23",
         hasPreview: true,
       },
@@ -71,7 +72,7 @@ const modules: Module[] = [
       },
       {
         id: "2-3",
-        title: "The Roles of Breaks & Recovery",
+        title: "The Roles of Breaks &amp; Recovery",
         duration: "34:42",
         hasPreview: false,
       },
@@ -98,12 +99,12 @@ const modules: Module[] = [
   },
   {
     id: "4",
-    title: "Module 4: Advanced Focus & Productivity Hacks",
+    title: "Module 4: Advanced Focus &amp; Productivity Hacks",
     duration: "1.2h of video",
     lessons: [
       {
         id: "4-1",
-        title: "Optimizing Energy & Mental Clarity",
+        title: "Optimizing Energy &amp; Mental Clarity",
         duration: "14:23",
         hasPreview: false,
       },
@@ -146,10 +147,14 @@ const Curriculum = () => {
     });
   };
 
+  const headerRef = useScrollAnimation<HTMLDivElement>("fadeInUp", { duration: 0.8 });
+  const leftSectionRef = useScrollAnimation<HTMLDivElement>("fadeInLeft", { delay: 0.2, duration: 0.8 });
+  const rightSectionRef = useScrollAnimation<HTMLDivElement>("fadeInRight", { delay: 0.3, duration: 0.8 });
+
   return (
     <div id="curriculum" className="flex flex-col py-10 md:py-16 lg:py-20">
       {/* header */}
-      <div className="flex flex-col gap-6 md:gap-8 py-16 md:py-24 lg:py-40 px-4 md:px-10">
+      <div ref={headerRef} className="flex flex-col gap-6 md:gap-8 py-16 md:py-24 lg:py-40 px-4 md:px-10">
         <Badge text="Course Curriculum" />
         <h2 className="text-gray-800 dark:text-[#E0E3E5] text-2xl md:text-3xl lg:text-[40px] max-w-2xl md:max-w-4xl lg:max-w-160 mx-auto text-center leading-[115%] tracking-tighter">
           Mastering Deep Work: A Structured Path to Peak Productivity
@@ -158,7 +163,7 @@ const Curriculum = () => {
       {/* content */}
       <div className="flex flex-col lg:flex-row gap-8 md:gap-12 lg:gap-15 px-4 md:px-10 lg:justify-center">
         {/* left */}
-        <div className="flex flex-col w-full lg:max-w-140 pt-10 md:pt-16 lg:pt-25">
+        <div ref={leftSectionRef} className="flex flex-col w-full lg:max-w-140 pt-10 md:pt-16 lg:pt-25">
           {modules.map((module) => (
             <div key={module.id} className="flex flex-col">
               {/* module header */}
@@ -238,7 +243,7 @@ const Curriculum = () => {
           ))}
         </div>
         {/* right */}
-        <div className="pt-10 md:pt-16 lg:pt-25 w-full lg:w-auto">
+        <div ref={rightSectionRef} className="pt-10 md:pt-16 lg:pt-25 w-full lg:w-auto">
           <div className="lg:sticky lg:top-24">
             <div
               className="flex flex-col justify-start rounded-3xl bg-white dark:bg-[#111214] px-5 md:px-6 lg:px-8 pt-6 md:pt-8 lg:pt-10 pb-6 md:pb-8 gap-8 md:gap-12 lg:gap-16 relative"
@@ -317,7 +322,7 @@ const Curriculum = () => {
                     <TbRosetteDiscountCheckFilled className="text-[#2466F2] dark:text-white w-3 h-3 md:w-3.5 md:h-3.5 lg:w-4 lg:h-4" />
                   </div>
                   <span className="text-gray-700 dark:text-[#D0D5D9] text-sm md:text-[15px] leading-[135%] font-normal">
-                    Templates & Trackers – Stay on track effortlessly.
+                    Templates &amp; Trackers – Stay on track effortlessly.
                   </span>
                 </div>
                 <div className="flex items-center gap-3 md:gap-4 lg:gap-5">
@@ -343,7 +348,7 @@ const Curriculum = () => {
                     <TbRosetteDiscountCheckFilled className="text-[#2466F2] dark:text-white w-3 h-3 md:w-3.5 md:h-3.5 lg:w-4 lg:h-4" />
                   </div>
                   <span className="text-gray-700 dark:text-[#D0D5D9] text-sm md:text-[15px] leading-[135%] font-normal">
-                    Live Q&As – Expert guidance & accountability.
+                    Live Q&amp;As – Expert guidance &amp; accountability.
                   </span>
                 </div>
                 <div className="flex items-center gap-3 md:gap-4 lg:gap-5">

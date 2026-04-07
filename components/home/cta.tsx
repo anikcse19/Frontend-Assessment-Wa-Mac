@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Badge from "../shared/Badge";
 import {
@@ -5,15 +7,19 @@ import {
   TbRosetteDiscountCheckFilled,
 } from "react-icons/tb";
 import { IconCircle } from "../ui/IconCircle";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const CTA = () => {
+  const leftSectionRef = useScrollAnimation<HTMLDivElement>("fadeInLeft", { duration: 0.8 });
+  const rightSectionRef = useScrollAnimation<HTMLDivElement>("fadeInRight", { delay: 0.2, duration: 0.8 });
+
   return (
     <div
       id="enroll"
       className="flex flex-col lg:flex-row gap-4 md:gap-6 py-16 md:py-20 lg:py-30 text-gray-800 dark:text-[#E0E3E5]"
     >
       {/* left side */}
-      <div className="flex flex-col py-6 md:py-8 lg:py-10 px-6 md:px-8 lg:px-15 gap-8 md:gap-12 lg:gap-15 rounded-3xl bg-white dark:bg-[#111214] w-full lg:w-[60%]">
+      <div ref={leftSectionRef} className="flex flex-col py-6 md:py-8 lg:py-10 px-6 md:px-8 lg:px-15 gap-8 md:gap-12 lg:gap-15 rounded-3xl bg-white dark:bg-[#111214] w-full lg:w-[60%]">
         <div className="flex flex-col items-start gap-4 md:gap-5">
           <Badge text="Introducing" />
           <h2 className="text-2xl md:text-3xl lg:text-[40px] tracking-tighter leading-[115%]">
@@ -41,6 +47,7 @@ const CTA = () => {
 
       {/* right side */}
       <div
+        ref={rightSectionRef}
         className="flex flex-col justify-start w-full lg:w-[40%] rounded-3xl bg-white dark:bg-[#111214] px-5 md:px-6 lg:px-8 pt-6 md:pt-8 lg:pt-10 pb-6 md:pb-8 gap-8 md:gap-12 lg:gap-16 relative"
         style={{
           boxShadow: "0px 8px 40px 0px #2466F226",

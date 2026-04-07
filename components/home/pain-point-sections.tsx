@@ -1,23 +1,31 @@
+"use client";
+
 import Image from "next/image";
 import Badge from "../shared/Badge";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const PainPointsSection = () => {
+  const section1Ref = useScrollAnimation<HTMLDivElement>("fadeInUp", { duration: 0.8 });
+  const section2Ref = useScrollAnimation<HTMLDivElement>("fadeInUp", { delay: 0.2, duration: 0.8 });
+  const images1Ref = useScrollAnimation<HTMLDivElement>("scaleIn", { delay: 0.3, duration: 0.8 });
+  const images2Ref = useScrollAnimation<HTMLDivElement>("stagger", { delay: 0.4, duration: 0.6 });
+
   return (
     <div>
       {/* pain points section */}
-      <div className="py-50 px-10">
+      <div ref={section1Ref} className="py-50 px-10">
         {/* badge */}
         <Badge text="Are Distractions Holding You Back?" />
         {/* heading */}
-        <p className="tracking-tight text-gray-800 dark:text-[#E0E3E5] max-w-5xl md:max-w-6xl lg:max-w-250 mx-auto text-2xl md:text-3xl lg:text-[52px] text-center 2xl:text-left leading-[120%] font-medium mb-6">
+        <div className="tracking-tight text-gray-800 dark:text-[#E0E3E5] max-w-5xl md:max-w-6xl lg:max-w-250 mx-auto text-2xl md:text-3xl lg:text-[52px] text-center 2xl:text-left leading-[120%] font-medium mb-6">
           If you struggle to focus, feel overwhelmed by endl
           <p className="inline text-gray-400 dark:text-[#484A4C]">
-            ess tasks, or procrastinate instead of making progress, you’re not
+            ess tasks, or procrastinate instead of making progress, you&apos;re not
             alone.
           </p>
-        </p>
+        </div>
         {/* images */}
-        <div className="flex justify-center flex-wrap gap-2 md:space-x-2">
+        <div ref={images1Ref} className="flex justify-center flex-wrap gap-2 md:space-x-2">
           <Image
             src="/images/pain-points-section/Image1.png"
             alt="Pain Points"
@@ -42,7 +50,7 @@ const PainPointsSection = () => {
         </div>
       </div>
       {/* Wrapper section */}
-      <div className="flex gap-4">
+      <div ref={section2Ref} className="flex gap-4">
         <Image
           src="/images/pain-points-section/image4.png"
           alt="Pain Points"
@@ -76,10 +84,10 @@ const PainPointsSection = () => {
                 hack
               </p>
               <p className="text-gray-700 dark:text-[#D0D5D9] text-[28px] max-w-60 leading-[115%] tracking-normal font-[500px]">
-                And fortunately it’s a skill you can train & develop.
+                And fortunately it&apos;s a skill you can train &amp; develop.
               </p>
             </div>
-            <div className="flex flex-row md:flex-col gap-2">
+            <div ref={images2Ref} className="flex flex-row md:flex-col gap-2">
               <Image
                 src="/images/pain-points-section/Image5.png"
                 alt="Pain Points"
