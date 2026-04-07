@@ -9,7 +9,7 @@ interface VideoCardProps {
 }
 
 const VideoCard = ({ avatar, bgImage, name, role }: VideoCardProps) => (
-  <div className="relative min-w-[280px] sm:min-w-[300px] md:min-w-[340px] h-96 sm:h-100 md:h-110 rounded-4xl overflow-hidden group cursor-pointer shrink-0">
+  <div className="relative w-[75vw] sm:w-75 md:w-85 h-96 sm:h-100 md:h-110 rounded-4xl overflow-hidden group cursor-pointer shrink-0 snap-center">
     {/* Gradient border overlay */}
     <div
       className="absolute inset-0 rounded-4xl pointer-events-none z-20"
@@ -43,12 +43,17 @@ const VideoCard = ({ avatar, bgImage, name, role }: VideoCardProps) => (
 
       <div className="absolute inset-0 flex items-center justify-center">
         <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-white rounded-full flex items-center justify-center pl-1 shadow-xl transform transition-transform group-hover:scale-110">
-          <Play fill="#2563eb" className="text-[#2563eb] w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7" />
+          <Play
+            fill="#2563eb"
+            className="text-[#2563eb] w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7"
+          />
         </div>
       </div>
 
       <div className="absolute bottom-6 left-6 sm:bottom-8 sm:left-8">
-        <h4 className="text-base sm:text-lg md:text-xl font-semibold text-white">{name}</h4>
+        <h4 className="text-base sm:text-lg md:text-xl font-semibold text-white">
+          {name}
+        </h4>
         <p className="text-white/70 text-xs sm:text-sm mt-1">{role}</p>
       </div>
     </div>

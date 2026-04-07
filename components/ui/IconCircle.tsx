@@ -12,11 +12,11 @@ interface IconCircleProps {
 }
 
 const iconSizeMap = {
-  xs: 16,
-  sm: 20,
-  md: 23,
-  lg: 24,
-  xl: 28,
+  xs: 12,
+  sm: 16,
+  md: 18,
+  lg: 20,
+  xl: 24,
 };
 
 /**
@@ -38,10 +38,7 @@ export const IconCircle = ({
 
   return (
     <GradientBorder variant="circle" size={size} className={className}>
-      <div
-        className="text-[#2466F2] dark:text-white"
-        style={{ width: finalIconSize, height: finalIconSize }}
-      >
+      <div className="text-[#2466F2] dark:text-white flex items-center justify-center" style={{ width: finalIconSize, height: finalIconSize }}>
         {icon}
       </div>
     </GradientBorder>

@@ -19,7 +19,7 @@ const Footer = () => {
             alt="Sunburst Icon"
             width={320}
             height={180}
-            className="w-[200px] md:w-[260px] lg:w-[320px] h-auto"
+            className="w-70 md:w-65 lg:w-80 h-auto"
           />
         </div>
         <div
@@ -31,10 +31,7 @@ const Footer = () => {
           }}
           className="flex flex-col md:flex-row items-center justify-between gap-4 md:gap-8 pt-6 md:pt-8 pb-8 md:pb-15"
         >
-          <p className="text-gray-600 dark:text-[#D0D5D9] text-sm md:text-[15px] text-center md:text-left">
-            © Copyright 2024, All Rights Reserved
-          </p>
-          <div className="flex flex-wrap items-center justify-center md:justify-end gap-4 md:gap-6 lg:gap-8 text-sm md:text-[15px]">
+          <div className="flex flex-wrap items-center justify-center md:justify-end gap-4 md:gap-6 lg:gap-8 text-sm md:text-[15px] order-1 md:order-2">
             <a href="#" className="hover:text-[#2466F2] transition-colors">
               Terms & Conditions
             </a>
@@ -48,6 +45,9 @@ const Footer = () => {
               Support
             </a>
           </div>
+          <p className="text-gray-600 dark:text-[#D0D5D9] text-sm md:text-[15px] text-center md:text-left order-2 md:order-1">
+            © Copyright 2024, All Rights Reserved
+          </p>
         </div>
       </div>
     </div>

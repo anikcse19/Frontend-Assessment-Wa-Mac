@@ -80,7 +80,7 @@ const HeroSection = () => {
 
         {/* Headline Section */}
         <div className="text-center mb-8 md:mb-12">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white leading-tight mb-4 md:mb-6 max-w-4xl mx-auto px-2">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-gray-900 dark:text-white leading-tight mb-4 md:mb-6 max-w-4xl mx-auto px-2">
             Master Focus & Get More Done in Less Time
           </h1>
 

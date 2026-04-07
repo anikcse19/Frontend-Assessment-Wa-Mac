@@ -17,24 +17,27 @@ const PainPointsSection = () => {
           </p>
         </p>
         {/* images */}
-        <div className="flex justify-center space-x-2">
+        <div className="flex justify-center flex-wrap gap-2 md:space-x-2">
           <Image
             src="/images/pain-points-section/Image1.png"
             alt="Pain Points"
             width={118}
             height={120}
+            className="w-16 h-16 md:w-29 md:h-30"
           />
           <Image
             src="/images/pain-points-section/Image2.png"
             alt="Pain Points"
             width={118}
             height={120}
+            className="w-16 h-16 md:w-29 md:h-30"
           />
           <Image
             src="/images/pain-points-section/Image3.png"
             alt="Pain Points"
             width={118}
             height={120}
+            className="w-16 h-16 md:w-29 md:h-30"
           />
         </div>
       </div>
@@ -82,18 +85,21 @@ const PainPointsSection = () => {
                 alt="Pain Points"
                 width={118}
                 height={120}
+                className="w-20 h-20 md:w-29 md:h-30"
               />
               <Image
                 src="/images/pain-points-section/Image6.png"
                 alt="Pain Points"
                 width={118}
                 height={120}
+                className="w-20 h-20 md:w-29 md:h-30"
               />
               <Image
                 src="/images/pain-points-section/Image7.png"
                 alt="Pain Points"
                 width={118}
                 height={120}
+                className="w-20 h-20 md:w-29 md:h-30"
               />
             </div>
           </div>

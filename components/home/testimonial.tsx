@@ -54,7 +54,7 @@ const Testimonial = () => {
         {/* Cards Container */}
         <div
           ref={scrollContainerRef}
-          className="flex gap-4 md:gap-6 overflow-x-auto scrollbar-hide pb-4 scroll-smooth"
+          className="flex gap-4 md:gap-6 overflow-x-auto scrollbar-hide pb-4 scroll-smooth snap-x snap-mandatory -mx-4 px-4 md:mx-0"
         >
           <TextCard
             avatar="/images/testimonials/Avatar1.png"

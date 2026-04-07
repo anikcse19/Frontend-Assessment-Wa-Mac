@@ -129,14 +129,16 @@ const Navbar = () => {
               </button>
 
               {/* Enroll Now Button - Desktop Only */}
-              <Button
-                variant="primary"
-                size="md"
-                onClick={() => router.push("#enroll")}
-                className="hidden md:flex"
-              >
-                Enroll now
-              </Button>
+              <div className="hidden md:flex">
+                {" "}
+                <Button
+                  variant="primary"
+                  size="md"
+                  onClick={() => router.push("#enroll")}
+                >
+                  Enroll now
+                </Button>
+              </div>
 
               {/* Mobile menu button */}
               <button

@@ -8,7 +8,7 @@ interface TextCardProps {
 }
 
 const TextCard = ({ avatar, text, name, role }: TextCardProps) => (
-  <div className="relative w-[260px] sm:w-[300px] md:w-[340px] h-auto sm:h-96 md:h-110 rounded-4xl shrink-0">
+  <div className="relative w-[75vw] sm:w-75 md:w-85 h-auto sm:h-96 md:h-110 rounded-4xl shrink-0 snap-center">
     {/* Gradient border overlay */}
     <div
       className="absolute inset-0 rounded-4xl pointer-events-none z-20"
