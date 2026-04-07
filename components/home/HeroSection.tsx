@@ -48,7 +48,7 @@ const HeroSection = () => {
     <section className="relative pt-24 md:pt-32 lg:pt-40 pb-12 md:pb-16 px-4 sm:px-6 bg-[#F8FAFC] dark:bg-[#000000] overflow-hidden">
       {/* Lines background with blur and opacity */}
       <div
-        className="absolute bottom-0 left-0 right-0 top-2/5 z-0 opacity-5 "
+        className="absolute bottom-0 left-0 right-0 top-2/5 z-0 opacity-90 dark:opacity-5 "
         style={{
           backgroundImage: "url('/images/lines.png')",
           backgroundSize: "cover",
@@ -57,7 +57,7 @@ const HeroSection = () => {
         }}
       ></div>
       {/* Bottom background gradient overlay */}
-      <div className="absolute bottom-0 left-0 right-0 z-0 blur-3xl opacity-50">
+      <div className="absolute bottom-12 md:bottom-8 lg:bottom-0 left-0 right-0 z-0 blur-md dark:blur-3xl opacity-100 dark:opacity-50">
         <Image
           src="/images/BG-Gradient.png"
           alt="Background gradient"
